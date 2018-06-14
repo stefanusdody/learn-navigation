@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+    <script
+     src="https://code.jquery.com/jquery-3.3.1.min.js"
+     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+     crossorigin="anonymous"></script>
+     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <span id="brand">
+        <a href="index.html">Brand</a>
+      </span>
+      <ul id="menu">
+         <li><a href ="#">Home</a></li>
+         <li><a href ="#">About</a></li>
+         <li><a href ="#">Contact</a></li>
+         <li><a href ="#">FAQ</a></li>
+      </ul>
+      <div id="toggle">
+        <div class="span" id="one"></div>
+        <div class="span" id="two"></div>
+        <div class="span" id="three"></div>
+      </div>
+    </nav>
+
+      <div id="resize">
+         <ul id="menu">
+           <li><a href ="#">Home</a></li>
+           <li><a href ="#">About</a></li>
+           <li><a href ="#">Contact</a></li>
+           <li><a href ="#">FAQ</a></li>
+         </ul>
+      </div>
+
+      <div class="content">
+        <h1>Welcome To Singapore</h1>
+      </div>
+
+     <script>
+      $('#toggle').click(function(){
+      $(this).toggleClass('on');
+      $("#resize").toggleClass("active");
+      })
+
+     </script>
+
+  </body>
+</html>
